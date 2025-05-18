@@ -63,7 +63,7 @@ This project analyzed Capital Bikeshare data using Linear, Ridge, LASSO, Elastic
 - **Table of Performance Evaluation**
 
 | Model Name | Hyperparameter tuning of the models | MSE of PU_ct | MSE of DO_ct | Out-of-sample-cost |
-|------------|------------------------------------|---------------|-------------|---------------------|
+|-------------------|------------------------------------|---------------|-------------|---------------------|
 | Linear Regression | - | 54.8884 | 69.5465 | 76.6389 |
 | Ridge | Alpha = 100 | 54.8891 | 69.5454 | 76.6389 |
 | LASSO | Alpha =  10 | 71.5580 | 79.7125 | 76.6389 |
