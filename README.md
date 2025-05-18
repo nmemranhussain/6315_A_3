@@ -85,6 +85,17 @@ Figure 2. MSE vs. Number of Drop-offs (DO_ct) across all models
 ![Original Location](6315_A_3_3.jpg)  
 Figure 3. Out-of-sample-cost (zoomed-in) across all models
 
+- **Decision Performance Evaluation**
+From the tables and plots given above, Linear & Ridge Regression show the lowest MSE for both PU_ct and DO_ct, indicating better numerical prediction accuracy. LASSO, Elastic Net, and KNN show higher MSEs but all models have the almost same out-of-sample-cost. This suggests the prediction errors may not translate to worse operational decisions. Decision Tree performs the worst across all metrics. Random Forest and Neural Network have higher MSEs, but produce the lowest out-of-sample-cost (76.5833) meaning they make better allocation decisions. Gradient Boosting has the lowest out-of-sample-cost overall (76.4722) despite high MSEs, suggesting it's most effective in operational terms.
+
+### Findings, recommendations, and limitations
+This project analyzed Capital Bikeshare usage data from February to April 2024 to enhance operational decision-making through predictive modeling. The analysis revealed that while Linear and Ridge Regression achieved the lowest prediction errors (MSE) for bike pickups (PU_ct) and dock availability (DO_ct), they did not perform best in operational terms. Interestingly, Gradient Boosting, despite having higher MSEs, resulted in the lowest out-of-sample cost, indicating superior real-world decision impact. This was closely followed by Random Forest and Neural Networks, suggesting that more complex models may offer better cost-oriented outcomes even with lower predictive accuracy.
+
+If the goal is to prioritize numerical prediction accuracy and the small differences in out-of-sample cost (within ~0.16 units) are operationally negligible, then Linear and Ridge Regression are strong choices. These models are simpler, more interpretable, and computationally efficient. However, when fine-tuned cost efficiency or real-time operational decisions are critical, ensemble models like Gradient Boosting or Random Forest may be better suited due to their slightly superior performance in decision-based outcomes. Therefore, the choice of model should depend on the business context—whether the priority is simplicity and prediction accuracy or complex, optimized allocation decisions.
+
+This analysis has several limitations. The models may be sensitive to feature scaling and require more robust hyperparameter tuning. The use of static weather data and a limited historical window (only three months) restricts the generalizability of the results. Additionally, user behavior patterns and real-time dynamics were not incorporated. Future work should explore longer time periods, adaptive learning with real-time data, and behavioral features to build more dynamic and effective forecasting systems for bikeshare operations.
+
+
 
 
 
