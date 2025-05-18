@@ -73,10 +73,14 @@ This project analyzed Capital Bikeshare data using Linear, Ridge, LASSO, Elastic
 | KNN | n_neighbors = 10 | 64.9297 | 72.8519 | 76.6389 |
 | Neural Network | alpha = 0.01, hidden_layer_sizes = (100,) | 74.2597 | 100.5584 | 76.5833 |
 
+![Original Location](6315_A_3_1.jpg)  
+Figure 1. MSE vs. Number of Pick-ups (PU_ct) across all models
 
+![Original Location](6315_A_3_2.jpg)  
+Figure 2. MSE vs. Number of Drop-offs (DO_ct) across all models
 
-
-
+![Original Location](6315_A_3_3.jpg)  
+Figure 3. Out-of-sample-cost (zoomed-in) across all models
 
 
 
