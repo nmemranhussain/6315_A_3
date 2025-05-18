@@ -68,8 +68,15 @@ This project analyzed Capital Bikeshare data using Linear, Ridge, LASSO, Elastic
 | LASSO | Alpha =  10 | 71.5580 | 79.7125 | 76.6389 |
 | Elastic Net | Alpha = 100 | 62.5541 | 72.4992 | 76.6389 |
 | Decision Tree | max_depth = 1 | 86.3950 | 95.9265 | 76.6389 |
-| Random Forest |  Best Parameters for PU_ct: {'max_depth': 5, 'min_samples_split': 10, 'n_estimators': 200} Best Parameters for DO_ct: {'max_depth': 5, 'min_samples_split': 10, 'n_estimators': 200} | 73.1887 | 85.3664 | 76.5833 |
-| KNN |  | 64.9297 | 72.8519 | 76.6389
+| Random Forest |  For PU_ct: max_depth = 5, min_samples_split = 10, n_estimators = 200 and For DO_ct: max_depth = 5, min_samples_split = 10, n_estimators = 200 | 73.1887 | 85.3664 | 76.5833 |
+| Gradient Boosting |learning_rate = 0.05, n_estimators = 50 | 92.4546 | 111.9453 | 76.4722 |
+| KNN | n_neighbors = 10 | 64.9297 | 72.8519 | 76.6389 |
+| Neural Network | alpha = 0.01, hidden_layer_sizes = (100,) | 74.2597 | 100.5584 | 76.5833 |
+
+
+
+
+
 
 
 
