@@ -60,7 +60,7 @@ This project analyzed Capital Bikeshare data using Linear, Ridge, LASSO, Elastic
 - **Visual Evaluation (Charts/Plots):** Line plots and bar charts were used to compare prediction errors across models and to zoom into subtle differences in out-of-sample cost. It helps us to assess model visual effectiveness for decision-making.
 
 ### Quantitative Analysis
-
+- **Table of Performance Evaluation**
 | Model Name | Hyperparameter tuning of the models | MSE of PU_ct | MSE of DO_ct | Out-of-sample-cost |
 |------------|------------------------------------|---------------|-------------|--------------------|
 | Linear Regression | - | 54.8884 | 69.5465 | 76.6389 |
@@ -73,6 +73,8 @@ This project analyzed Capital Bikeshare data using Linear, Ridge, LASSO, Elastic
 | KNN | n_neighbors = 10 | 64.9297 | 72.8519 | 76.6389 |
 | Neural Network | alpha = 0.01, hidden_layer_sizes = (100,) | 74.2597 | 100.5584 | 76.5833 |
 
+- **Plots of Performance Evaluation**
+  
 ![Original Location](6315_A_3_1.jpg)  
 Figure 1. MSE vs. Number of Pick-ups (PU_ct) across all models
 
